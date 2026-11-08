@@ -45,7 +45,10 @@ public class A3 {
 
         // Names
         boolean operation = true;
+        boolean registration = true;
 
+        while (registration) {
+        
         while (operation) {
             System.out.print("\nPlease Enter Your Family Member's First Name and Last Name: ");
             firstName = scanner.next();
@@ -58,11 +61,11 @@ public class A3 {
                 operation = false;
             }
         }
-        
+
         // Relationship
 
         operation = true;
-
+        
         while (operation) {
             System.out.print("\nPlease Enter the Relationship Between the Family Member and the New Club Member: \n"+
                 "1 - Father\n" +
@@ -170,12 +173,27 @@ public class A3 {
             yearBirth = scanner.nextInt();
             if ((yearBirth < 2008) || (yearBirth > 2020)) {
                 System.out.print("Invalid year of birth: " + yearBirth +
-                    "\nValid year of birth between 2008 and 2020.");
+                    "\nValid year of birth between 2008 and 2020." +
+                    "\n\nDo you wish to continue? (yes/no): ");
+                String answer = scanner.next();
+                if (answer.equalsIgnoreCase("yes")) {
+                    operation = true;
+                }
+                else {
+                    System.out.println("Thank you for using the Montreal Youth Basketball Club (MYBC) Registration System");
+                    registration = false;
+                    operation = false;
+                }
                 
             }
         }
 
+        }
 
+        // Closing message
+        System.out.println("_____________________________________________________________________________________________");
+        System.out.println("                       Thank you for using our Registration System");
+        System.out.println("_____________________________________________________________________________________________");
 
     }
 }

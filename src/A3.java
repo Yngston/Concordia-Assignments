@@ -89,7 +89,7 @@ public class A3 {
             // Family member's name
             operation = true;
             while (operation) {
-                System.out.print("Please Enter Your family Member's First Name and Last Name: ");
+                System.out.print("\nPlease Enter Your family Member's First Name and Last Name: ");
                 firstName = scanner.next();
                 lastName = scanner.next();
                 scanner.nextLine();
@@ -105,7 +105,7 @@ public class A3 {
             // Relationship
             operation = true;
             while (operation) {
-                System.out.print("Please Enter the Relationship between the family member and the new club member: \n" +
+                System.out.print("\nPlease Enter the Relationship between the family member and the new club member: \n" +
                     " 1 - Father\n" +
                     " 2 - Mother\n" +
                     " 3 - GrandFather\n" +
@@ -154,16 +154,16 @@ public class A3 {
             }
 
             // Family member's address and city
-            System.out.print("Please Enter Your Address: ");
+            System.out.print("\nPlease Enter Your Address: ");
             address = scanner.nextLine();
 
-            System.out.print("Please Enter Your City: ");
+            System.out.print("\nPlease Enter Your City: ");
             city = scanner.nextLine();
 
             // Postal code must have 6 characters
             operation = true;
             while (operation) {
-                System.out.print("Please Enter Your Postal Code: ");
+                System.out.print("\nPlease Enter Your Postal Code: ");
                 postalCode = scanner.next();
                 scanner.nextLine();
                 if (postalCode.length() != 6) {
@@ -178,7 +178,7 @@ public class A3 {
             // Phone number, only the digits are counted (dashes and spaces are ignored)
             operation = true;
             while (operation) {
-                System.out.print("Please Enter Your Phone Number: ");
+                System.out.print("\nPlease Enter Your Phone Number: ");
                 phoneNumber = scanner.nextLine();
                 String digitsOnly = phoneNumber.replaceAll("[^0-9]", "");
                 if (digitsOnly.length() < 10) {
@@ -193,7 +193,7 @@ public class A3 {
             // New member's name
             operation = true;
             while (operation) {
-                System.out.print("Please Enter the new club Member's First Name and Last Name: ");
+                System.out.print("\nPlease Enter the new club Member's First Name and Last Name: ");
                 newFirstName = scanner.next();
                 newLastName = scanner.next();
                 scanner.nextLine();
@@ -209,7 +209,7 @@ public class A3 {
             // Year of birth, if it's bad the user can try again or quit
             operation = true;
             while (operation) {
-                System.out.print("Please Enter the Year Of Birth between (2008 and 2020): ");
+                System.out.print("\nPlease Enter the Year Of Birth between (2008 and 2020): ");
                 yearBirth = scanner.nextInt();
                 scanner.nextLine();
                 if ((yearBirth < 2008) || (yearBirth > 2020)) {
@@ -219,13 +219,13 @@ public class A3 {
                     // keep asking until it's yes or no
                     answer = "";
                     while (!answer.equalsIgnoreCase("yes") && !answer.equalsIgnoreCase("no")) {
-                        System.out.print("Do you wish to continue (yes/no) ? ");
+                        System.out.print("\nDo you wish to continue (yes/no) ? ");
                         answer = scanner.next();
                         scanner.nextLine();
                     }
 
                     if (answer.equalsIgnoreCase("no")) {
-                        System.out.println("Sorry, There is no membership for your child's age.");
+                        System.out.println("\nSorry, There is no membership for your child's age.");
                         cancelled = true;
                         operation = false;
                     }
@@ -241,7 +241,7 @@ public class A3 {
                 // Month of birth
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter the Month Of Birth (1 - 12): ");
+                    System.out.print("\nPlease Enter the Month Of Birth (1 - 12): ");
                     monthBirth = scanner.nextInt();
                     scanner.nextLine();
                     if ((monthBirth < 1) || (monthBirth > 12)) {
@@ -256,7 +256,7 @@ public class A3 {
                 // Day of birth
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter the Day Of Birth (1 - 31): ");
+                    System.out.print("\nPlease Enter the Day Of Birth (1 - 31): ");
                     dayBirth = scanner.nextInt();
                     scanner.nextLine();
                     if ((dayBirth < 1) || (dayBirth > 31)) {
@@ -271,7 +271,7 @@ public class A3 {
                 // Gender, accepts m or M and f or F
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter the Gender Of the new club member (M/F): ");
+                    System.out.print("\nPlease Enter the Gender Of the new club member (M/F): ");
                     gender = scanner.next();
                     scanner.nextLine();
                     if (gender.equalsIgnoreCase("M") || gender.equalsIgnoreCase("F")) {
@@ -287,7 +287,7 @@ public class A3 {
                 // Height
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter the Height in inches Of the new club member (35-120): ");
+                    System.out.print("\nPlease Enter the Height in inches Of the new club member (35-120): ");
                     height = scanner.nextDouble();
                     scanner.nextLine();
                     if ((height < 35) || (height > 120)) {
@@ -300,16 +300,16 @@ public class A3 {
                 }
 
                 // New member's address and city
-                System.out.print("Please Enter new club member's Address: ");
+                System.out.print("\nPlease Enter new club member's Address: ");
                 newAddress = scanner.nextLine();
 
-                System.out.print("Please Enter new club member's City: ");
+                System.out.print("\nPlease Enter new club member's City: ");
                 newCity = scanner.nextLine();
 
                 // New member's postal code
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter new club member's Postal Code: ");
+                    System.out.print("\nPlease Enter new club member's Postal Code: ");
                     newPostalCode = scanner.next();
                     scanner.nextLine();
                     if (newPostalCode.length() != 6) {
@@ -324,7 +324,7 @@ public class A3 {
                 // New member's phone number
                 operation = true;
                 while (operation) {
-                    System.out.print("Please Enter new club member's Phone Number: ");
+                    System.out.print("\nPlease Enter new club member's Phone Number: ");
                     newPhoneNumber = scanner.nextLine();
                     String digitsOnly = newPhoneNumber.replaceAll("[^0-9]", "");
                     if (digitsOnly.length() < 10) {
@@ -353,7 +353,7 @@ public class A3 {
                 int periodsChosen = 0;
                 operation = true;
                 while (operation && periodsChosen < 3) {
-                    System.out.println("Summer of 2027 Tournaments Registration");
+                    System.out.println("\nSummer of 2027 Tournaments Registration");
                     System.out.println("_______________________________________");
 
                     answer = "";
@@ -365,7 +365,7 @@ public class A3 {
 
                     if (answer.equalsIgnoreCase("yes")) {
                         // show only the periods that are still free
-                        System.out.println("Periods Available to register your child:");
+                        System.out.println("\nPeriods Available to register your child:");
                         for (int p = 0; p < 3; p++) {
                             if (!registeredPeriods[count][p]) {
                                 System.out.println(" " + (p + 1) + " - " + periodNames[p]);
@@ -399,11 +399,11 @@ public class A3 {
 
                 // Show what they registered for and the cost
                 if (periodsChosen == 0) {
-                    System.out.println(newFirstName + " " + newLastName +
+                    System.out.println("\n" + newFirstName + " " + newLastName +
                         " do not have any Summer 2027 Tournament registration.");
                 }
                 else {
-                    System.out.println(newFirstName + " " + newLastName +
+                    System.out.println("\n" + newFirstName + " " + newLastName +
                         " is successfully registered in the following 2027 Summer Tournaments:");
                     for (int p = 0; p < 3; p++) {
                         if (registeredPeriods[count][p]) {
@@ -445,7 +445,7 @@ public class A3 {
             }
             answer = "";
             while (!answer.equalsIgnoreCase("yes") && !answer.equalsIgnoreCase("no")) {
-                System.out.print("Do you wish to add more members to the club (yes/no) ? ");
+                System.out.print("\nDo you wish to add more members to the club (yes/no) ? ");
                 answer = scanner.next();
                 scanner.nextLine();
             }
@@ -455,12 +455,12 @@ public class A3 {
         }
 
         // Show all the registrations
-        System.out.println("-----------------------------------------------------------");
+        System.out.println("\n-----------------------------------------------------------");
         System.out.println("Montreal Youth Basketball Club (MYBC) have " + count + " New Registrations:");
         System.out.println("-----------------------------------------------------------");
 
         for (int i = 0; i < count; i++) {
-            System.out.println("___________________________________________");
+            System.out.println("\n___________________________________________");
             System.out.println("New Club Member " + (i + 1) + " Registration Details.");
             System.out.println("____________________________________________");
             System.out.println(familyFirstNames[i] + " " + familyLastNames[i] + " " + relationships[i] +
@@ -470,6 +470,7 @@ public class A3 {
             System.out.println("Lives at: " + familyAddresses[i] + " in the city of " + familyCities[i] +
                 " with postal code " + familyPostalCodes[i]);
             System.out.println("Has the following Telephone Number: " + familyPhoneNumbers[i]);
+            System.out.println();
             System.out.println("The new club member " + memberFirstNames[i] + " " + memberLastNames[i] +
                 " who lives at: " + memberAddresses[i] + " in the city of " + memberCities[i] +
                 " with postal code " + memberPostalCodes[i]);
@@ -496,7 +497,7 @@ public class A3 {
             }
         }
 
-        System.out.println("Following is the list of the new Members:");
+        System.out.println("\nFollowing is the list of the new Members:");
         System.out.println("-----------------------------------------");
         for (int i = 0; i < count; i++) {
             System.out.println(memberFirstNames[order[i]] + " " + memberLastNames[order[i]] + " " +
@@ -504,7 +505,7 @@ public class A3 {
         }
 
         // Closing message
-        System.out.println("____________________________________________");
+        System.out.println("\n____________________________________________");
         System.out.println("Thank you for using our Registration System");
         System.out.println("____________________________________________");
 

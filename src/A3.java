@@ -4,6 +4,19 @@
 // For COMP 248 P - Fall 2026
 //--------------------------------------------------------------
 // Assignment 3: Montreal Youth Basketball Club Registration System
+//
+// Date: November 2026
+//
+// Purpose: This program is a registration system for the Montreal Youth
+// Basketball Club. A family member enters their own info, then their
+// child's info, and the program checks that everything entered makes
+// sense (names, postal code, phone number, birth year, etc.). Each child
+// gets a random 4 digit registration number and can be signed up for up
+// to three summer 2027 periods at 100 $ each. When the user is done, it
+// prints all the registrations and a list of the kids sorted by height,
+// shortest to tallest.
+//
+// Have fun!
 
 import java.util.Scanner;
 
